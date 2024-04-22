@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.conteiner {
+  margin: auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+h1 {
+  font-size: 40px;
+  margin: 2px auto 2px 2px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin-right: 5px;
+  align-content: center;
+}
+.encabezado {
+  background-color: coral;
+}
+.header {
+  flex-wrap: wrap;
+  align-content: center;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: rgb(245, 79, 14);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+nav div a {
+  margin: 3px;
+  color: yellow;
+}
+.main {
+  background-color: rgb(249, 199, 17);
+}
+.grid-prod {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+.card {
+  justify-self: center;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(228, 90, 90, 0.2),
+    7px 7px 20px rgba(219, 191, 36, 0.972);
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: -27px -7px 20px rgba(202, 73, 73, 0.2),
+    7px 7px 20px rgba(225, 149, 61, 0.88);
+}
+.card a {
+  justify-self: end;
+  padding: 3px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.card a:hover {
+  justify-self: end;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  text-decoration: none;
+  transform: scale(1.4);
+}
+.aside {
+  background-color: chocolate;
+}
+.footer {
+  background-color: coral;
+}
+.redes {
+  margin-left: auto;
+  margin-right: 5px;
+  align-content: center;
+}
