@@ -20,6 +20,7 @@ h1 {
   margin: 2px auto 2px 2px;
   line-height: 1.2;
   text-align: left;
+  text-shadow: 3px 3px blue;
 }
 .logo{
   width: 50px;
