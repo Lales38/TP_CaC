@@ -21,7 +21,13 @@ h1 {
   line-height: 1.2;
   text-align: left;
 }
-
+.logo{
+  width: 50px;
+  height: 50px;
+  box-shadow: 3px 3px 3px blue;
+  margin: 2px;
+  border-radius: 5px;
+}
 header ul {
   display: flex;
   list-style: none;
@@ -46,7 +52,7 @@ header ul {
 }
 nav div a {
   margin: 3px;
-  color: rgb(44, 204, 41);
+  color: rgb(224, 238, 29);
 }
 .main {
   background-color: rgb(249, 199, 17);
