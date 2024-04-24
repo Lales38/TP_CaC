@@ -6,6 +6,7 @@
 
 .flex {
   display: flex;
+  margin: 1px;
 }
 .grid {
   display: grid;
