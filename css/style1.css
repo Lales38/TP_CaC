@@ -49,7 +49,7 @@ nav div a {
   color: yellow;
 }
 .main {
-  background-color: rgb(249, 199, 17);
+  background-color: rgba(224, 148, 18, 0.887);
 }
 .grid-prod {
   display: grid;
@@ -62,7 +62,7 @@ nav div a {
   padding: 5px;
   border-radius: 10px;
   box-shadow: -7px -7px 20px rgba(228, 90, 90, 0.2),
-    7px 7px 20px rgba(219, 191, 36, 0.972);
+    7px 7px 20px rgba(196, 168, 8, 0.972);
 }
 .card img {
   width: 200px;
