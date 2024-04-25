@@ -7,6 +7,7 @@
 .flex {
   display: flex;
 }
+/*------------web------------*/
 .grid {
   display: grid;
 }
@@ -23,6 +24,7 @@ h1 {
   text-align: left;
   text-shadow: 4px 4px 7px blue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .logo {
   width: 60px;
