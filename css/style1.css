@@ -6,7 +6,6 @@
 
 .flex {
   display: flex;
-  margin: 1px;
 }
 .grid {
   display: grid;
@@ -17,18 +16,42 @@
   overflow: visible;
 }
 h1 {
-  font-size: 40px;
-  margin: 2px auto 2px 2px;
+  color: rgb(224, 238, 29);
+  font-size: 60px;
+  margin: 2px auto 2px 42px;
   line-height: 1.2;
   text-align: left;
+  text-shadow: 4px 4px 7px blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.logo {
+  width: 60px;
+  height: 60px;
+  box-shadow: 3px 3px 3px blue;
+  margin: 2px;
+  border-radius: 5px;
+}
 header ul {
+  
   display: flex;
   list-style: none;
-  gap: 15px;
-  margin-right: 5px;
+  gap: 65px;
+  margin-right: 75px;
   align-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  
+}
+header ul a, nav a {
+  color: rgb(224, 238, 29);
+  text-decoration: none;
+  text-shadow: 2px 2px 5px blue;
+  }
+  header li, nav a{
+    transition: 0.7s;
+  }
+header li:hover, nav a:hover {
+  transform: scale(1.3);
 }
 .encabezado {
   background-color: coral;
@@ -46,11 +69,15 @@ header ul {
   align-content: center;
 }
 nav div a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20px;
   margin: 3px;
-  color: yellow;
+  color: rgb(224, 238, 29);
+  text-shadow: 2px 2px 5px blue;
+  
 }
 .main {
-  background-color: rgba(224, 148, 18, 0.887);
+  background-color: rgb(249, 199, 17);
 }
 .grid-prod {
   display: grid;
@@ -63,7 +90,7 @@ nav div a {
   padding: 5px;
   border-radius: 10px;
   box-shadow: -7px -7px 20px rgba(228, 90, 90, 0.2),
-    7px 7px 20px rgba(196, 168, 8, 0.972);
+    7px 7px 20px rgba(219, 191, 36, 0.972);
 }
 .card img {
   width: 200px;
