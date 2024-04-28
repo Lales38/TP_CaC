@@ -24,7 +24,6 @@ h1 {
   text-align: left;
   text-shadow: 4px 4px 7px blue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 .logo {
   width: 60px;
@@ -34,7 +33,6 @@ h1 {
   border-radius: 5px;
 }
 header ul {
-  
   display: flex;
   list-style: none;
   gap: 65px;
@@ -42,17 +40,19 @@ header ul {
   align-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
-  
 }
-header ul a, nav a {
+header ul a,
+nav a {
   color: rgb(224, 238, 29);
   text-decoration: none;
   text-shadow: 2px 2px 5px blue;
-  }
-  header li, nav a{
-    transition: 0.7s;
-  }
-header li:hover, nav a:hover {
+}
+header li,
+nav a {
+  transition: 0.7s;
+}
+header li:hover,
+nav a:hover {
   transform: scale(1.2);
 }
 .encabezado {
@@ -73,11 +73,10 @@ header li:hover, nav a:hover {
 }
 nav div a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 20px;
+  font-size: 20px;
   margin: 3px;
   color: rgb(224, 238, 29);
   text-shadow: 2px 2px 5px blue;
-  
 }
 .main {
   background-color: rgb(249, 199, 17);
@@ -101,10 +100,10 @@ font-size: 20px;
   border-radius: 10px;
   box-shadow: -27px -7px 20px rgba(202, 73, 73, 0.2),
     7px 7px 20px rgba(225, 149, 61, 0.88);
-transition: 1.5s;
-  }
-.card img:hover{
-  transform: scale(1.4);
+  transition: 1.5s;
+}
+.card img:hover {
+  transform: scale(1.3);
 }
 .card a {
   justify-self: end;
@@ -120,6 +119,65 @@ transition: 1.5s;
   border-radius: 8px;
   text-decoration: none;
   transform: scale(1.4);
+}
+.grid-item-3 {
+  margin: 15px;
+  display: flex;
+  gap: 5px;
+}
+.img-det {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  
+  transition: 1s;
+}
+.img-det:hover {
+  transform: scale(1.3);
+}
+.grid-prod-caracteristicas {
+  display: grid;
+  grid-row: repeat(3, 1fr);
+  gap:3px ;
+}
+.det-pre {
+  width: 300px;
+  display: grid;
+  border: 2px;
+ border-radius: 5px;
+ 
+  text-align: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px gray;
+}
+main div h2{
+  color: blue;
+  text-align: left;
+  font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+}
+.precio {
+  font-size: 40px;
+}
+.det-pre h2 {
+  width: 300px;
+}
+.cate {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+.talles {
+  list-style: none;
+  justify-content: space-around;
+}
+main div li {
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 5px;
+}
+.descri{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .aside {
   background-color: chocolate;
