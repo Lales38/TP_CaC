@@ -103,7 +103,7 @@ nav div a {
   transition: 1.5s;
 }
 .card img:hover {
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 .card a {
   justify-self: end;
@@ -129,15 +129,55 @@ nav div a {
   width: 300px;
   height: 300px;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px gray;
+  
   transition: 1s;
 }
-.img-det:hover{
-  transform: scale(1.8);
+.img-det:hover {
+  transform: scale(1.3);
 }
-.grid-prod-caracteristicas{
-display: grid;
-grid-row: repeat(3,1fr);
+.grid-prod-caracteristicas {
+  display: grid;
+  grid-row: repeat(3, 1fr);
+  gap:3px ;
+}
+.det-pre {
+  width: 300px;
+  display: grid;
+  border: 2px;
+ border-radius: 5px;
+ 
+  text-align: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px gray;
+}
+main div h2{
+  color: blue;
+  text-align: left;
+  font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+}
+.precio {
+  font-size: 40px;
+}
+.det-pre h2 {
+  width: 300px;
+}
+.cate {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+.talles {
+  list-style: none;
+  justify-content: space-around;
+}
+main div li {
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 5px;
+}
+.descri{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .aside {
   background-color: chocolate;
