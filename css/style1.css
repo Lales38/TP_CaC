@@ -68,7 +68,7 @@ nav a:hover {
 .header {
   flex-wrap: wrap;
   align-content: center;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 .navbar {
   padding: 3px;
@@ -259,7 +259,7 @@ footer {
   align-content: center;
 }
 .redes a {
-  padding-top: 5px;
+  padding-top: 15px;
   color: rgb(242, 241, 235);
   text-shadow: 3px 3px 6px gray;
 }
