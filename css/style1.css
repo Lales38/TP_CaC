@@ -96,6 +96,7 @@ nav div a {
   gap: 8px;
 }
 .card {
+  width: 100%;
   justify-self: center;
   margin: 3px;
   padding: 5px;
