@@ -3,7 +3,9 @@
   padding: 0;
   margin: 0;
 }
-
+body {
+  background-color: rgb(238, 231, 218);
+}
 .flex {
   display: flex;
 }
@@ -14,26 +16,27 @@
 .conteiner {
   padding: 10px;
   margin: auto;
-  width: 1200px;
+  width: 1300px;
   overflow: visible;
 }
 /* -------------header y nav--------------- */
 h1 {
-  color: rgb(224, 238, 29);
+  color: rgb(238, 231, 218);
   font-size: 60px;
   margin: 2px auto 2px 42px;
   line-height: 1.2;
   text-align: left;
-  text-shadow: 4px 4px 7px blue;
+  text-shadow: 4px 4px 7px  darkblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .logo {
   width: 60px;
   height: 60px;
-  box-shadow: 3px 3px 3px blue;
+  box-shadow: 3px 3px 3px  darkblue;
   margin: 2px;
   border-radius: 5px;
 }
+
 header ul {
   display: flex;
   list-style: none;
@@ -45,9 +48,9 @@ header ul {
 }
 header ul a,
 nav a {
-  color: rgb(224, 238, 29);
+  color: rgb(238, 231, 218);
   text-decoration: none;
-  text-shadow: 2px 2px 5px blue;
+  text-shadow: 2px 2px 5px darkblue;
 }
 header li,
 nav a {
@@ -57,8 +60,9 @@ header li:hover,
 nav a:hover {
   transform: scale(1.2);
 }
+
 .encabezado {
-  background-color: coral;
+  background-color: rgb(136, 171, 142);
   box-shadow: 3px 3px 5px gray;
 }
 .header {
@@ -69,7 +73,7 @@ nav a:hover {
   padding: 3px;
   display: flex;
   width: 100%;
-  background-color: rgb(245, 79, 14);
+  background-color: rgb(175, 200, 173);
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
@@ -78,8 +82,8 @@ nav div a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   margin: 3px;
-  color: rgb(224, 238, 29);
-  text-shadow: 2px 2px 5px blue;
+  color: rgb(238, 231, 218);
+  text-shadow: 2px 2px 5px  darkblue;
 }
 /* -------------main index---------------- */
 .main {
@@ -243,11 +247,25 @@ main div li {
   background-color: chocolate;
 }
 /* ---------------footer------------------- */
-.footer {
-  background-color: coral;
+footer {
+  height: 55px;
+  background-color: rgb(136, 171, 142) ;
+  
 }
 .redes {
   margin-left: auto;
-  margin-right: 5px;
+  margin-right: 15px;
   align-content: center;
+}
+.redes a {
+  color: rgb(242, 241, 235);
+  text-shadow: 3px 3px 6px gray;
+}
+footer p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: rgb(238, 231, 218);
+  margin-left: 25%;
+  align-self: center;
+  text-shadow: 3px 3px 6px gray;
 }
