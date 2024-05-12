@@ -3,37 +3,41 @@
   padding: 0;
   margin: 0;
 }
-
+body {
+  width: 1300px;
+  background-color: rgb(238, 231, 218);
+}
 .flex {
+  width: 1300px;
   display: flex;
 }
-
 .grid {
   display: grid;
 }
 .conteiner {
   padding: 10px;
   margin: auto;
-  width: 1200px;
+  width: max-content;
   overflow: visible;
 }
 /* -------------header y nav--------------- */
 h1 {
-  color: rgb(224, 238, 29);
+  color: rgb(238, 231, 218);
   font-size: 60px;
   margin: 2px auto 2px 42px;
   line-height: 1.2;
   text-align: left;
-  text-shadow: 4px 4px 7px blue;
+  text-shadow: 4px 4px 7px darkblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .logo {
   width: 60px;
   height: 60px;
-  box-shadow: 3px 3px 3px blue;
+  box-shadow: 3px 3px 3px rgb(238, 231, 218);
   margin: 2px;
   border-radius: 5px;
 }
+
 header ul {
   display: flex;
   list-style: none;
@@ -45,9 +49,9 @@ header ul {
 }
 header ul a,
 nav a {
-  color: rgb(224, 238, 29);
+  color: rgb(238, 231, 218);
   text-decoration: none;
-  text-shadow: 2px 2px 5px blue;
+  text-shadow: 2px 2px 5px darkblue;
 }
 header li,
 nav a {
@@ -57,19 +61,21 @@ header li:hover,
 nav a:hover {
   transform: scale(1.2);
 }
+
 .encabezado {
-  background-color: coral;
-  box-shadow: 3px 3px 5px gray;
+  width: auto;
+  background-color: rgb(136, 171, 142);
 }
 .header {
   flex-wrap: wrap;
   align-content: center;
+  padding-top: 15px;
 }
 .navbar {
   padding: 3px;
   display: flex;
   width: 100%;
-  background-color: rgb(245, 79, 14);
+  background-color: rgb(175, 200, 173);
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
@@ -78,21 +84,23 @@ nav div a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   margin: 3px;
-  color: rgb(224, 238, 29);
-  text-shadow: 2px 2px 5px blue;
+  color: rgb(238, 231, 218);
+  text-shadow: 2px 2px 5px darkblue;
 }
 /* -------------main index---------------- */
 .main {
   background-color: transparent;
 }
 .grid-prod {
+  width: 1300px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  gap: 5px;
 }
 .card {
-  justify-self: center;
-  margin: 3px;
+  width: 97%;
+  justify-content: space-between;
+  margin: 2px;
   padding: 5px;
   border-radius: 8px;
   box-shadow: -2px -2px 6px gray, 4px 4px 10px gray;
@@ -243,11 +251,108 @@ main div li {
   background-color: chocolate;
 }
 /* ---------------footer------------------- */
-.footer {
-  background-color: coral;
+footer {
+  height: 55px;
+  background-color: rgb(136, 171, 142);
 }
 .redes {
   margin-left: auto;
-  margin-right: 5px;
+  margin-right: 15px;
   align-content: center;
+  padding-top: 15px;
+}
+.redes a {
+  color: rgb(242, 241, 235);
+  text-shadow: 3px 3px 6px gray;
+}
+footer p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: rgb(238, 231, 218);
+  margin-left: 25%;
+  align-self: center;
+  text-shadow: 3px 3px 6px gray;
+}
+/*-------------------Responsive--------------------*/
+/*-------------------Tablet------------------------*/
+@media (max-width: 800px) {
+  body {
+    width: 800px;
+  }
+  .flex {
+    width: 1000px;
+  }
+  .encabezado {
+    width: 1000px;
+  }
+  .grid-prod {
+    width: 1000px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*---------------------Movil-----------------------*/
+@media (max-width: 330px) {
+  body {
+    width: 330px;
+  }
+  .flex {
+    width: 330px;
+  }
+  .encabezado {
+    width: 330px;
+  }
+  .conteiner {
+    width: 330px;
+  }
+  .grid-prod {
+    width: 330px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1 {
+    font-size: 30px;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    gap: 5px;
+    font-size: 16px;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .navbar a {
+    font-size: 14px;
+    text-align: center;
+  }
+  .card img {
+    width: 200px;
+    height: 120px;
+  }
+  main div p {
+    font-size: 15px;
+    padding: 5px;
+    width: 310px;
+  }
+  footer{
+    height: 70px;
+  }
+  .redes {
+    margin-left: auto;
+    margin-right: 5px;
+    align-content: center;
+    padding-top: 5px;
+  }
+  footer p{
+    font-size: 18px;
+    margin: 20%;
+    text-align: center;
+  }
+  .redes em{   
+    font-size: 18px;
+  }
+
 }
