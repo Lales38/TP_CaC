@@ -4,19 +4,20 @@
   margin: 0;
 }
 body {
+  width: 1300px;
   background-color: rgb(238, 231, 218);
 }
 .flex {
+  width: 1300px;
   display: flex;
 }
-
 .grid {
   display: grid;
 }
 .conteiner {
   padding: 10px;
   margin: auto;
-  width: 1300px;
+  width: max-content;
   overflow: visible;
 }
 /* -------------header y nav--------------- */
@@ -26,13 +27,13 @@ h1 {
   margin: 2px auto 2px 42px;
   line-height: 1.2;
   text-align: left;
-  text-shadow: 4px 4px 7px  darkblue;
+  text-shadow: 4px 4px 7px darkblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .logo {
   width: 60px;
   height: 60px;
-  box-shadow: 3px 3px 3px  darkblue;
+  box-shadow: 3px 3px 3px rgb(238, 231, 218);
   margin: 2px;
   border-radius: 5px;
 }
@@ -62,8 +63,8 @@ nav a:hover {
 }
 
 .encabezado {
+  width: auto;
   background-color: rgb(136, 171, 142);
-  box-shadow: 3px 3px 5px gray;
 }
 .header {
   flex-wrap: wrap;
@@ -84,21 +85,22 @@ nav div a {
   font-size: 20px;
   margin: 3px;
   color: rgb(238, 231, 218);
-  text-shadow: 2px 2px 5px  darkblue;
+  text-shadow: 2px 2px 5px darkblue;
 }
 /* -------------main index---------------- */
 .main {
   background-color: transparent;
 }
 .grid-prod {
+  width: 1300px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  gap: 5px;
 }
 .card {
-  width: 100%;
-  justify-self: center;
-  margin: 3px;
+  width: 97%;
+  justify-content: space-between;
+  margin: 2px;
   padding: 5px;
   border-radius: 8px;
   box-shadow: -2px -2px 6px gray, 4px 4px 10px gray;
@@ -251,8 +253,7 @@ main div li {
 /* ---------------footer------------------- */
 footer {
   height: 55px;
-  background-color: rgb(136, 171, 142) ;
-  
+  background-color: rgb(136, 171, 142);
 }
 .redes {
   margin-left: auto;
@@ -261,7 +262,6 @@ footer {
   padding-top: 15px;
 }
 .redes a {
-  
   color: rgb(242, 241, 235);
   text-shadow: 3px 3px 6px gray;
 }
@@ -272,4 +272,87 @@ footer p {
   margin-left: 25%;
   align-self: center;
   text-shadow: 3px 3px 6px gray;
+}
+/*-------------------Responsive--------------------*/
+/*-------------------Tablet------------------------*/
+@media (max-width: 800px) {
+  body {
+    width: 800px;
+  }
+  .flex {
+    width: 1000px;
+  }
+  .encabezado {
+    width: 1000px;
+  }
+  .grid-prod {
+    width: 1000px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*---------------------Movil-----------------------*/
+@media (max-width: 345px) {
+  body {
+    width: 340px;
+  }
+  .flex {
+    width: 340px;
+  }
+  .encabezado {
+    width: 340px;
+  }
+  .conteiner {
+    width: 340px;
+  }
+  .grid-prod {
+    width: 340px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1 {
+    font-size: 30px;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    gap: 5px;
+    font-size: 16px;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .navbar a {
+    font-size: 14px;
+    text-align: center;
+  }
+  .card img {
+    width: 200px;
+    height: 120px;
+  }
+  main div p {
+    font-size: 15px;
+    padding: 5px;
+    width: 310px;
+  }
+  footer{
+    height: 70px;
+  }
+  .redes {
+    margin-left: auto;
+    margin-right: 5px;
+    align-content: center;
+    padding-top: 5px;
+  }
+  footer p{
+    font-size: 18px;
+    margin: 20%;
+    text-align: center;
+  }
+  .redes em{   
+    font-size: 18px;
+  }
+
 }
