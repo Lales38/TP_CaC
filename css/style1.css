@@ -201,6 +201,7 @@ main div h2 {
   font-size: 30px;
 }
 .talles {
+  width: 300px;
   padding: 2px;
   margin: 1px;
   list-style: none;
@@ -291,21 +292,21 @@ footer p {
   }
 }
 /*---------------------Movil-----------------------*/
-@media (max-width: 330px) {
+@media (max-width: 400px) {
   body {
-    width: 330px;
+    width: 400px;
   }
   .flex {
-    width: 330px;
+    width: 400px;
   }
   .encabezado {
-    width: 330px;
+    width: 400px;
   }
   .conteiner {
-    width: 330px;
+    width: 400px;
   }
   .grid-prod {
-    width: 330px;
+    width: 400px;
     grid-template-columns: repeat(1, 1fr);
   }
   h1 {
@@ -355,4 +356,20 @@ footer p {
     font-size: 18px;
   }
 
+}
+/*--------------Monitor mayores de 25"--------------*/
+@media (min-width: 1500px) {
+  body {
+    width: 1800px;
+  }
+  .flex {
+    width: 1800px;
+  }
+  .encabezado {
+    width: 1800px;
+  }
+  .grid-prod {
+    width: 1800px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
