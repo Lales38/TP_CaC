@@ -4,11 +4,11 @@
   margin: 0;
 }
 body {
-  width: 1300px;
+  width: 1400px;
   background-color: rgb(238, 231, 218);
 }
 .flex {
-  width: 1300px;
+  width: 1400px;
   display: flex;
 }
 .grid {
@@ -92,13 +92,13 @@ nav div a {
   background-color: transparent;
 }
 .grid-prod {
-  width: 1300px;
+  width: 1400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 7px;
 }
 .card {
-  width: 97%;
+  width: 99%;
   justify-content: space-between;
   margin: 2px;
   padding: 5px;
@@ -170,7 +170,7 @@ main div p {
   width: 300px;
   display: grid;
   grid-row: repeat(3, 1fr);
-  gap: 4px;
+  gap: 6px;
 }
 .det-pre {
   height: 100px;
