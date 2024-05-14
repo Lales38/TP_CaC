@@ -293,6 +293,12 @@ footer p {
   body {
     width: 800px;
   }
+  .conteiner {
+    padding: 7px;
+    margin: auto;
+    width: max-content;
+    overflow: visible;
+  }
   .flex {
     width: 1000px;
   }
@@ -314,6 +320,11 @@ footer p {
     width: 280px;
     height: auto;
     transition: 1.2s;
+  }
+  .img-det {
+    width: 250px;
+    height: 180px;
+    border-radius: 4px;
   }
 }
 /*---------------------Movil-----------------------*/
