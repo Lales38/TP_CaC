@@ -154,7 +154,7 @@ main div p {
 .grid-item-3 {
   margin-top: 15px;
   display: flex;
-  gap: 5px;
+  gap: 8px;
 }
 .img-det {
   width: 400px;
@@ -214,17 +214,30 @@ main div li {
 }
 .descripcion-prod {
   padding: 10px;
-  width: 900px;
+  width: 600px;
   margin: 10px;
   border: 2px;
   border-radius: 5px;
   box-shadow: 3px 3px 6px gray;
 }
 .descri {
-  width: 880px;
+  width: 580px;
   padding: 6px;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.iframe{
+  align-content: center;
+ padding: auto;
+  width: auto;;
+  height:auto;
+  border: 2px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px gray;
+}
+iframe{
+  width: 290px;
+  height:auto;
 }
 .volver {
   font-family: "Times New Roman", Times, serif;
