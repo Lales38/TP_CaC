@@ -316,15 +316,51 @@ footer p {
     padding: 5px;
   }
   .card img {
+    gap: 10px;
     padding: 3px;
     width: 280px;
     height: auto;
     transition: 1.2s;
   }
   .img-det {
-    width: 250px;
+    width: 280px;
     height: 180px;
-    border-radius: 4px;
+    
+  }
+  .grid-prod-caracteristicas {
+    width: 200px;
+    gap: 4px;
+  }
+  .det-pre {
+    height: 120px;
+    margin: 5px;
+    width: 200px;
+  }
+  main div h2 {
+    color: blue;
+    text-align: center;
+    font-size: 25px;
+  }
+.precio{
+  font-size: 30px;
+}
+.cate{
+  font-size: 30px;
+}
+  .talles {
+    width: 200px;
+    padding: 3px;
+    margin: 2px;
+  }
+  .descripcion-prod {
+    padding: 8px;
+    width: 320px;
+    margin: 8px;
+  }
+  .descri {
+    width: 310px;
+    padding: 5px;
+    font-size: 18px;
   }
 }
 /*---------------------Movil-----------------------*/
