@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <script src="registro.js"></script>
+    <link rel="stylesheet" href="registro.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Team 9</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/zapalogo.ico" />
+  </head>
+  <body>
+
+    <header class="flex encabezado">
+      <img class="logo" src="./img/zapalogo.png" alt="" />
+      <h1>Team 9</h1>
+      <div class="header">
+        <ul class="container">
+          <li><a href="#" button id="openModal">Registro</a></li> 
+           <li><a href="#" id="openLoginModal">Login</a></li>
+
+        </ul>
+      </div>
+     
+    </header>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Creá tu cuenta</h2>
+        <form id="registrationForm">
+          <table class="height50px">
+            <tr>
+              <td><label for="username">Nombre de usuario:</label></td>
+              <td><input type="text" id="username" name="username" required></td>
+            </tr>
+          </table>
+
+          <table class="height50px">
+            <tr>
+              <td><label for="email">Correo electrónico:</label></td>
+              <td><input type="email" id="email" name="email" required></td>
+            </tr>
+          </table>
+
+          <table class="height50px">
+            <tr>
+              <td><label for="password">Contraseña:</label></td>
+              <td><input type="password" id="password" name="password" required></td>
+            </tr>
+          </table>
+
+
+          <table class="height50px">
+            <tr>
+              <td>Género:</td>
+              <td>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                
+              </td>
+            </tr>
+          </table>
+
+
+          <table class="height50px">
+              <td>País:</td>
+              <td>
+                <select id="pais" name="pais">
+                  <option value="argentina">Argentina</option>
+                  <option value="brasil">Brasil</option>
+                  <option value="chile">Chile</option>
+                  <option value="peru">Perú</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+
+
+          <table class="height50px">
+          <tr>
+            <td>
+              <label for="imagen">Imagen de perfil:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+            </td>
+          </tr>
+        </table>
+          
+           <br>
+          <button type="submit" class="btnConfirm">Registrarse</button>
+        </form>
+      </div>
+    </div>
+    
+   
+    <div id="modal-login" class="modal">
+      <div class="modal-content login-content"> <!-- Agregar clase 'login-content' para estilos específicos del modal de inicio de sesión -->
+        <span class="close">&times;</span>
+        <h2>Inicio de Sesión</h2>
+        <form id="loginForm">
+          <label for="loginEmail">Correo electrónico:</label>
+          <input type="email" id="loginEmail" name="loginEmail" required>
+          <label for="loginPassword">Contraseña:</label>
+          <input type="password" id="loginPassword" name="loginPassword" required>
+          <button type="submit" class="btnConfirm">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+
+   <!-- <script src="registro.js"></script> -->
+
+    <nav class="flex">
+      <div class="navbar">
+        <a href="./comoLLegar.html">Como llegar</a>
+        <a href="">Categorias</a>
+        <a href="">Favoritos</a>
+        <a href="">Buscador</a>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="conteiner">
+        <div class="grid-prod">
+          <div class="card">
+            <h3>Asics Gel-Impression</h3>
+            <div class="">
+              <img src="./img/z-ru-1.jpg" alt="" />
+              <div class="grid">
+                <p>
+                  Con estas Zapatillas corré hacia la meta con seguridad y
+                  estilo. Cuentan con una mediasuela Bounce volviendo tus
+                  pisadas más livianas ofreciendo máxima amortiguación y
+                  flexibilidad
+                </p>
+                <a href="./html/prod1.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Comet 2 Alt Beta</h3>
+            <div class="">
+              <img src="./img/z-ru-5.jpg" alt="" />
+              <div class="grid">
+                <p>
+                  Con estas Zapatillas corré hacia la meta con seguridad y
+                  estilo. Cuentan con una mediasuela Bounce volviendo tus
+                  pisadas más livianas ofreciendo máxima amortiguación y
+                  flexibilidad
+                </p>
+                <a href="./html/prod2.html">Ver</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Tenis Wilson Game 3</h3>
+            <div class="">
+              <img src="./img/z-te-1.jpg" alt="" />
+              <div class="grid">
+                <p>
+                  Descripción de las zapatillas Wilson Game 2 e Con la misión de
+                  proporcionar productos deportivos que permitan a todos, desde
+                  principiantes hasta atletas profesionales
+                </p>
+                <a href="./html/prod3.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Yoax Power 3.0</h3>
+            <div class="">
+              <img src="./img/z-te-4.jpg" alt="" />
+              <div class="grid">
+                <p>
+                  Descripción de las zapatillas Wilson Game 2 e Con la misión de
+                  proporcionar productos deportivos que permitan a todos, desde
+                  principiantes hasta atletas profesionales
+                </p>
+                <a href="./html/prod4.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Rusty Andreuss Arg Black</h3>
+            <div class="">
+              <img src="./img/z-ur-1.jpg" alt="" />
+              <div class="grid">
+                <p>
+                  Zapatillas negras de gamuza con goma blanca, posee logo en el
+                  extremo lateral posterior. Capellada de canvas.
+                </p>
+                <a href="./html/prod5.html">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="card grid">
+            <h3>Sneakers Street Acordonadas</h3>
+            <div class="">
+              <img src="./img/z-ur-5.jpg" alt="" />
+              <div class="grid">
+                <p>
+                  Modelos exclusivos de la nueva temporada PRIMAVERA/VERANO 2024
+                  Zapatilla de cuero sintetico y textil,
+                </p>
+                <a href="./html/prod6.html">Ver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    Publicidad
+    <aside class="aside">Banner con tarjetas de publicidad</aside>
+   
+    <footer class="footer flex">
+      <p>Derechos reservados by Team9</p>
+
+      <div class="redes">
+        <a href=""><em class="fab fa-twitter fa-2x"></em></a>
+        <a href=""><em class="fab fa-instagram fa-2x"></em></a>
+        <a href=""><em class="fab fa-facebook fa-2x"></em></a>
+        <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
+        <a href=""><em class="fab fa-tiktok fa-2x"></em></a>
+        <a href=""><em class="fab fa-github fa-2x"></em></a>
+      </div>
+    </footer>
+  </body>
+</html>
