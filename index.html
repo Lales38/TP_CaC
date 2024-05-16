@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style1.css" />
     <script src="registro.js"></script>
-    <link rel="stylesheet" href="registro.css"/>
+    <link rel="stylesheet" href="registro.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -20,18 +19,15 @@
     <link rel="icon" type="image/x-icon" href="./img/zapalogo.ico" />
   </head>
   <body>
-
     <header class="flex encabezado">
       <img class="logo" src="./img/zapalogo.png" alt="" />
       <h1>Team 9</h1>
       <div class="header">
         <ul class="container">
-          <li><a href="#" button id="openModal">Registro</a></li> 
-           <li><a href="#" id="openLoginModal">Login</a></li>
-
+          <li><a href="#" button id="openModal">Registro</a></li>
+          <li><a href="#" id="openLoginModal">Login</a></li>
         </ul>
       </div>
-     
     </header>
 
     <div id="modal" class="modal">
@@ -42,84 +38,98 @@
           <table class="height50px">
             <tr>
               <td><label for="username">Nombre de usuario:</label></td>
-              <td><input type="text" id="username" name="username" required></td>
+              <td>
+                <input type="text" id="username" name="username" required />
+              </td>
             </tr>
           </table>
 
           <table class="height50px">
             <tr>
               <td><label for="email">Correo electrónico:</label></td>
-              <td><input type="email" id="email" name="email" required></td>
+              <td><input type="email" id="email" name="email" required /></td>
             </tr>
           </table>
 
           <table class="height50px">
             <tr>
               <td><label for="password">Contraseña:</label></td>
-              <td><input type="password" id="password" name="password" required></td>
+              <td>
+                <input type="password" id="password" name="password" required />
+              </td>
             </tr>
           </table>
-
 
           <table class="height50px">
             <tr>
               <td>Género:</td>
               <td>
                 <label for="femenino">Femenino</label>
-                <input type="radio" id="femenino" name="genero" value="femenino">
+                <input
+                  type="radio"
+                  id="femenino"
+                  name="genero"
+                  value="femenino"
+                />
                 <label for="masculino">Masculino</label>
-                <input type="radio" id="masculino" name="genero" value="masculino">
-                
+                <input
+                  type="radio"
+                  id="masculino"
+                  name="genero"
+                  value="masculino"
+                />
               </td>
             </tr>
           </table>
 
-
           <table class="height50px">
-              <td>País:</td>
-              <td>
-                <select id="pais" name="pais">
-                  <option value="argentina">Argentina</option>
-                  <option value="brasil">Brasil</option>
-                  <option value="chile">Chile</option>
-                  <option value="peru">Perú</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-
-
-          <table class="height50px">
-          <tr>
+            <td>País:</td>
             <td>
-              <label for="imagen">Imagen de perfil:</label>
-            <input type="file" id="imagen" name="imagen" accept="image/*">
+              <select id="pais" name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="peru">Perú</option>
+              </select>
             </td>
-          </tr>
-        </table>
-          
-           <br>
+          </table>
+
+          <table class="height50px">
+            <tr>
+              <td>
+                <label for="imagen">Imagen de perfil:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" />
+              </td>
+            </tr>
+          </table>
+
+          <br />
           <button type="submit" class="btnConfirm">Registrarse</button>
         </form>
       </div>
     </div>
-    
-   
+
     <div id="modal-login" class="modal">
-      <div class="modal-content login-content"> <!-- Agregar clase 'login-content' para estilos específicos del modal de inicio de sesión -->
+      <div class="modal-content login-content">
+        <!-- Agregar clase 'login-content' para estilos específicos del modal de inicio de sesión -->
         <span class="close">&times;</span>
         <h2>Inicio de Sesión</h2>
         <form id="loginForm">
           <label for="loginEmail">Correo electrónico:</label>
-          <input type="email" id="loginEmail" name="loginEmail" required>
+          <input type="email" id="loginEmail" name="loginEmail" required />
           <label for="loginPassword">Contraseña:</label>
-          <input type="password" id="loginPassword" name="loginPassword" required>
+          <input
+            type="password"
+            id="loginPassword"
+            name="loginPassword"
+            required
+          />
           <button type="submit" class="btnConfirm">Iniciar Sesión</button>
         </form>
       </div>
     </div>
 
-   <!-- <script src="registro.js"></script> -->
+    <!-- <script src="registro.js"></script> -->
 
     <nav class="flex">
       <div class="navbar">
@@ -221,9 +231,9 @@
         </div>
       </div>
     </main>
-    Publicidad
+
     <aside class="aside">Banner con tarjetas de publicidad</aside>
-   
+
     <footer class="footer flex">
       <p>Derechos reservados by Team9</p>
 
