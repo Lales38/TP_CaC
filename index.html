@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style1.css" />
 
-    <script src="registro.js"></script>
-    <link rel="stylesheet" href="registro.css" />
+    <script src="js/registro.js"></script>
+    <link rel="stylesheet" href="css/registro.css" />
 
     <link
       rel="stylesheet"
@@ -21,8 +21,11 @@
     <link rel="icon" type="image/x-icon" href="./img/zapalogo.ico" />
   </head>
   <body>
-
     <!-- Carga el header que se encuentra en el header.html con el registro.js -->
+
+    <script>
+      cargarNombreDelHeader("Team 9", "/html/header.html");
+    </script>
     <div id="header-container"></div>
 
     <main class="main">
@@ -134,8 +137,4 @@
   </body>
 
   <!-- Carga el js y luego se le indca el nombre que aparecerá en el header, + la ruta  -->
-  <script src="js/registro.js"></script>
-  <script>
-    cargarNombreDelHeader('Team 9', '/html/header.html');
-  </script>
 </html>
