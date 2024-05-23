@@ -325,7 +325,6 @@ footer p {
   .img-det {
     width: 280px;
     height: 180px;
-    
   }
   .grid-prod-caracteristicas {
     width: 200px;
@@ -341,12 +340,12 @@ footer p {
     text-align: center;
     font-size: 25px;
   }
-.precio{
-  font-size: 30px;
-}
-.cate{
-  font-size: 30px;
-}
+  .precio {
+    font-size: 30px;
+  }
+  .cate {
+    font-size: 30px;
+  }
   .talles {
     width: 200px;
     padding: 3px;
@@ -422,6 +421,15 @@ footer p {
     padding: 5px;
     width: 310px;
   }
+  .talles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    width: 200px;
+    padding:1px;
+    
+    gap: 15px;
+  }
   footer {
     height: 70px;
   }
@@ -454,5 +462,8 @@ footer p {
   .grid-prod {
     width: 1800px;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .talles {
+    width: 300px;
   }
 }
