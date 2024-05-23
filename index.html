@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style1.css" />
+
     <script src="registro.js"></script>
     <link rel="stylesheet" href="registro.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -19,126 +21,9 @@
     <link rel="icon" type="image/x-icon" href="./img/zapalogo.ico" />
   </head>
   <body>
-    <header class="flex encabezado">
-      <img class="logo" src="./img/zapalogo.png" alt="" />
-      <h1>Team 9</h1>
-      <div class="header">
-        <ul class="container">
-          <li><a href="#" button id="openModal">Registro</a></li>
-          <li><a href="#" id="openLoginModal">Login</a></li>
-        </ul>
-      </div>
-    </header>
 
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Creá tu cuenta</h2>
-        <form id="registrationForm">
-          <table class="height50px">
-            <tr>
-              <td><label for="username">Nombre de usuario:</label></td>
-              <td>
-                <input type="text" id="username" name="username" required />
-              </td>
-            </tr>
-          </table>
-
-          <table class="height50px">
-            <tr>
-              <td><label for="email">Correo electrónico:</label></td>
-              <td><input type="email" id="email" name="email" required /></td>
-            </tr>
-          </table>
-
-          <table class="height50px">
-            <tr>
-              <td><label for="password">Contraseña:</label></td>
-              <td>
-                <input type="password" id="password" name="password" required />
-              </td>
-            </tr>
-          </table>
-
-          <table class="height50px">
-            <tr>
-              <td>Género:</td>
-              <td>
-                <label for="femenino">Femenino</label>
-                <input
-                  type="radio"
-                  id="femenino"
-                  name="genero"
-                  value="femenino"
-                />
-                <label for="masculino">Masculino</label>
-                <input
-                  type="radio"
-                  id="masculino"
-                  name="genero"
-                  value="masculino"
-                />
-              </td>
-            </tr>
-          </table>
-
-          <table class="height50px">
-            <td>País:</td>
-            <td>
-              <select id="pais" name="pais">
-                <option value="argentina">Argentina</option>
-                <option value="brasil">Brasil</option>
-                <option value="chile">Chile</option>
-                <option value="peru">Perú</option>
-              </select>
-            </td>
-          </table>
-
-          <table class="height50px">
-            <tr>
-              <td>
-                <label for="imagen">Imagen de perfil:</label>
-                <input type="file" id="imagen" name="imagen" accept="image/*" />
-              </td>
-            </tr>
-          </table>
-
-          <br />
-          <button type="submit" class="btnConfirm">Registrarse</button>
-        </form>
-      </div>
-    </div>
-
-    <div id="modal-login" class="modal">
-      <div class="modal-content login-content">
-        <!-- Agregar clase 'login-content' para estilos específicos del modal de inicio de sesión -->
-        <span class="close">&times;</span>
-        <h2>Inicio de Sesión</h2>
-        <form id="loginForm">
-          <label for="loginEmail">Correo electrónico:</label>
-          <input type="email" id="loginEmail" name="loginEmail" required />
-          <label for="loginPassword">Contraseña:</label>
-          <input
-            type="password"
-            id="loginPassword"
-            name="loginPassword"
-            required
-          />
-          <button type="submit" class="btnConfirm">Iniciar Sesión</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- <script src="registro.js"></script> -->
-
-    <nav class="flex">
-      <div class="navbar">
-        <a href="./html/comoLLegar.html">Como llegar</a>
-        <a href="">Categorias</a>
-        <a href="">Favoritos</a>
-        <a href="">Buscador</a>
-      </div>
-    </nav>
+    <!-- Carga el header que se encuentra en el header.html con el registro.js -->
+    <div id="header-container"></div>
 
     <main class="main">
       <div class="conteiner">
@@ -247,4 +132,10 @@
       </div>
     </footer>
   </body>
+
+  <!-- Carga el js y luego se le indca el nombre que aparecerá en el header, + la ruta  -->
+  <script src="js/registro.js"></script>
+  <script>
+    cargarNombreDelHeader('Team 9', '/html/header.html');
+  </script>
 </html>

@@ -16,25 +16,10 @@
     <link rel="icon" type="image/x-icon" href="../img/zapalogo.ico" />
   </head>
   <body>
-    <header class="flex encabezado">
-      <img class="logo" src="../img/zapalogo.png" alt="" />
-      <h1>Team 9</h1>
-      <div class="header">
-        <ul class="container">
-          <li><a href="">Registro</a></li>
-          <li><a href="">Login</a></li>
-        </ul>
-      </div>
-    </header>
 
-    <nav class="flex">
-      <div class="navbar">
-        <a href="./comoLLegar.html">Como llegar</a>
-        <a href="">Categorias</a>
-        <a href="">Favoritos</a>
-        <a href="">Buscador</a>
-      </div>
-    </nav>
+    <!-- Carga el header que se encuentra en el header.html con el registro.js -->
+    <div id="header-container"></div>
+
 
     <main class="main">
       <div class="conteiner">
@@ -117,4 +102,10 @@
       </div>
     </footer>
   </body>
+    <!-- Carga el js y luego se le indca el nombre que aparecerá en el header, + la ruta  -->
+    <script src="../js/registro.js"></script>
+    <script>
+      cargarNombreDelHeader('Team 9','./header.html');
+     </script>
+    </script>  
 </html>

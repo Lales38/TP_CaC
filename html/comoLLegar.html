@@ -15,31 +15,22 @@
     />
     <title>Como llegar</title>
 
-    <link rel="icon" type="image/x-icon" href="../img/zapalogo.ico" />
+
+    <link rel="icon" type="image/x-icon" href="./img/zapalogo.ico" />
   </head>
   <body>
-
-    <header class="flex encabezado">
-      <img class="logo" src="../img/zapalogo.png" alt="" />
-      <h1>Como llegar</h1>
-      <div class="header">
-        <ul class="container">
-          <li><a href="">Registro</a></li>
-          <li><a href="">Login</a></li>
-        </ul>
-      </div>
-    </header>
-
-
-    <main class="main">
-      <div class="conteiner">
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13620.672221452736!2d-64.20898965572516!3d-31.40949556434156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987e96635449%3A0xd249c21f4664bdda!2sAv.%20Figueroa%20Alcorta%20356%2C%20X5000KFQ%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1715720473313!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div id="botonRetorno">
-       <a href="../index.html"> <button>Inicio</button></a>
-      </div>
-    </main>
+      <!-- Carga el header que se encuentra en el header.html con el registro.js -->
+      <div id="header-container"></div>
+      
+      <main class="main">
+        <div class="conteiner">
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13620.672221452736!2d-64.20898965572516!3d-31.40949556434156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987e96635449%3A0xd249c21f4664bdda!2sAv.%20Figueroa%20Alcorta%20356%2C%20X5000KFQ%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1715720473313!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="botonRetorno">
+        <a href="../index.html"> <button>Inicio</button></a>
+        </div>
+      </main>
 
    
     <footer class="footer flex">
@@ -56,4 +47,11 @@
       </div>
     </footer>
   </body>
+
+   <!-- Carga el js y luego se le indca el nombre que aparecerá en el header, + la ruta  -->
+  <script src="../js/registro.js"></script>
+  <script>
+    cargarNombreDelHeader('Como llegar','./header.html');
+  </script>
+
 </html>
