@@ -4,39 +4,20 @@
   margin: 0;
 }
 body {
-  width: 1400px;
   background-color: rgb(238, 231, 218);
 }
 .flex {
-  width: 1400px;
   display: flex;
 }
 .grid {
   display: grid;
 }
 .conteiner {
-  padding: 10px;
-  margin: auto;
-  width: max-content;
-  overflow: visible;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
 }
 /* -------------header y nav--------------- */
-h1 {
-  color: rgb(238, 231, 218);
-  font-size: 60px;
-  margin: 2px auto 2px 42px;
-  line-height: 1.2;
-  text-align: left;
-  text-shadow: 4px 4px 7px darkblue;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.logo {
-  width: 60px;
-  height: 60px;
-  box-shadow: 3px 3px 3px rgb(238, 231, 218);
-  margin: 2px;
-  border-radius: 5px;
-}
 
 header ul {
   display: flex;
@@ -47,12 +28,7 @@ header ul {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
 }
-header ul a,
-nav a {
-  color: rgb(238, 231, 218);
-  text-decoration: none;
-  text-shadow: 2px 2px 5px darkblue;
-}
+
 header li,
 nav a {
   transition: 0.7s;
@@ -62,10 +38,6 @@ nav a:hover {
   transform: scale(1.2);
 }
 
-.encabezado {
-  width: auto;
-  background-color: rgb(136, 171, 142);
-}
 .header {
   flex-wrap: wrap;
   align-content: center;
@@ -92,10 +64,9 @@ nav div a {
   background-color: transparent;
 }
 .grid-prod {
-  width: 1400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 7px;
+  gap: 5px;
 }
 .card {
   width: 99%;
@@ -107,7 +78,7 @@ nav div a {
 }
 .card img {
   padding: 5px;
-  width: 350px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 3px 3px 10px gray;
@@ -148,7 +119,7 @@ main div p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   padding: 5px;
-  width: 350px;
+  width: 98%;
 }
 /* -----------------main productos------------- */
 .grid-item-3 {
@@ -235,10 +206,7 @@ main div li {
   border-radius: 5px;
   box-shadow: 3px 3px 6px gray;
 }
-iframe {
-  width: 290px;
-  height: auto;
-}
+
 .volver {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -264,76 +232,60 @@ iframe {
 .aside {
   background-color: chocolate;
 }
-/* ---------------footer------------------- */
-footer {
-  height: 55px;
-  background-color: rgb(136, 171, 142);
-}
-.redes {
-  margin-left: auto;
-  margin-right: 15px;
-  align-content: center;
-  padding-top: 15px;
-}
-.redes a {
-  color: rgb(242, 241, 235);
-  text-shadow: 3px 3px 6px gray;
-}
-footer p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
-  color: rgb(238, 231, 218);
-  margin-left: 25%;
-  align-self: center;
-  text-shadow: 3px 3px 6px gray;
-}
 /*-------------------Responsive--------------------*/
 /*-------------------Tablet------------------------*/
 @media (max-width: 800px) {
-  body {
-    width: 800px;
-  }
   .conteiner {
     padding: 7px;
     margin: auto;
-    width: max-content;
-    overflow: visible;
+    width: 100%;
   }
-  .flex {
-    width: 1000px;
+  header h1 {
+    font-size: 50px;
   }
-  .encabezado {
-    width: 1000px;
+  nav {
+    height: 80px;
   }
+  .navbar {
+    justify-content: center;
+    background-color: rgb(175, 200, 173);
+    align-items: center;
+  }
+
   .grid-prod {
-    width: 1000px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
   }
   .card {
-    width: 90%;
+    width: 98%;
     margin: 3px;
     padding: 5px;
   }
   .card img {
-    gap: 10px;
+    gap: 3px;
     padding: 3px;
-    width: 280px;
+    width: 97%;
     height: auto;
     transition: 1.2s;
   }
+  main div h3 {
+    font-size: 18px;
+  }
+  main div p {
+    font-size: 15px;
+  }
   .img-det {
-    width: 280px;
-    height: 180px;
+    width: 100%;
+    height: auto;
   }
   .grid-prod-caracteristicas {
-    width: 200px;
+    width: 98%;
     gap: 4px;
   }
   .det-pre {
     height: 120px;
     margin: 5px;
-    width: 200px;
+    width: 98%;
   }
   main div h2 {
     color: blue;
@@ -364,31 +316,18 @@ footer p {
 }
 /*---------------------Movil-----------------------*/
 @media (max-width: 400px) {
-  body {
-    width: 400px;
-  }
-  .flex {
-    width: 400px;
-  }
-  .encabezado {
-    width: 400px;
-  }
-  .conteiner {
-    width: 400px;
-  }
-  .grid-prod {
-    width: 400px;
+  id-prod {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
   }
   .card {
-    width: 90%;
+    width: 98%;
     margin: 2px;
     padding: 4px;
   }
   .card img {
     padding: 3px;
-    width: 180px;
+    width: 100%;
     height: auto;
     transition: 1.2s;
   }
@@ -412,26 +351,26 @@ footer p {
     font-size: 14px;
     text-align: center;
   }
+  .grid-prod {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+  }
   .card img {
-    width: 200px;
-    height: 120px;
+    width: 98%;
+    height: auto;
   }
   main div p {
     font-size: 15px;
     padding: 5px;
-    width: 310px;
   }
   .talles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
-    width: 200px;
-    padding:1px;
-    
+
+    padding: 1px;
+
     gap: 15px;
-  }
-  footer {
-    height: 70px;
   }
   .redes {
     margin-left: auto;
@@ -446,24 +385,5 @@ footer p {
   }
   .redes em {
     font-size: 18px;
-  }
-}
-/*--------------Monitor mayores de 25"--------------*/
-@media (min-width: 1500px) {
-  body {
-    width: 1800px;
-  }
-  .flex {
-    width: 1800px;
-  }
-  .encabezado {
-    width: 1800px;
-  }
-  .grid-prod {
-    width: 1800px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .talles {
-    width: 300px;
   }
 }
