@@ -73,16 +73,16 @@ footer {
 }
 .redes a {
   color: rgb(242, 241, 235);
-  text-shadow: 3px 3px 6px gray;
+  text-shadow: 2px 2px 7px darkblue;
   margin: 10px;
 }
 footer p {
   font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   color: rgb(238, 231, 218);
-  margin-left: 25%;
+  margin-left: 15%;
   align-self: center;
-  text-shadow: 3px 3px 6px gray;
+  text-shadow: 2px 2px 7px darkblue;
 }
 
 @media (max-width: 800px) {
