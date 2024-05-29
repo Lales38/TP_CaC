@@ -122,14 +122,13 @@ main div p {
   width: 98%;
 }
 /* -----------------main productos------------- */
-.grid-item-3 {
-  margin-top: 15px;
+.img-cont {
   display: flex;
-  gap: 8px;
+flex-direction: column;
+width: 100%;
 }
 .img-det {
-  width: 400px;
-  height: 300px;
+  width: 100%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px gray;
   transition: 1s;
@@ -138,15 +137,15 @@ main div p {
   transform: scale(1.3);
 }
 .grid-prod-caracteristicas {
-  width: 300px;
+  width: 100%;
   display: grid;
   grid-row: repeat(3, 1fr);
   gap: 6px;
 }
 .det-pre {
-  height: 100px;
+  height: auto;
   margin: 5px;
-  width: 300px;
+  width: 100%;
   display: grid;
   border: 2px;
   border-radius: 5px;
@@ -165,14 +164,15 @@ main div h2 {
   font-size: 40px;
 }
 .det-pre h2 {
-  width: 200px;
+  width: 100%;
 }
 .cate {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
 }
 .talles {
-  width: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
   padding: 2px;
   margin: 1px;
   list-style: none;
@@ -185,23 +185,23 @@ main div li {
 }
 .descripcion-prod {
   padding: 10px;
-  width: 600px;
+  width: 100%;
   margin: 10px;
   border: 2px;
   border-radius: 5px;
   box-shadow: 3px 3px 6px gray;
 }
 .descri {
-  width: 580px;
+  width: 100%;
   padding: 6px;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.iframe {
+.video {
   align-content: center;
   padding: auto;
-  width: auto;
-  height: auto;
+  width: 75%;
+  height: 75%;
   border: 2px;
   border-radius: 5px;
   box-shadow: 3px 3px 6px gray;
@@ -239,17 +239,6 @@ main div li {
     padding: 7px;
     margin: auto;
     width: 100%;
-  }
-  header h1 {
-    font-size: 50px;
-  }
-  nav {
-    height: 80px;
-  }
-  .navbar {
-    justify-content: center;
-    background-color: rgb(175, 200, 173);
-    align-items: center;
   }
 
   .grid-prod {
@@ -299,17 +288,17 @@ main div li {
     font-size: 30px;
   }
   .talles {
-    width: 200px;
+    width: 100%;
     padding: 3px;
     margin: 2px;
   }
   .descripcion-prod {
     padding: 8px;
-    width: 320px;
+    width: 100%;
     margin: 8px;
   }
   .descri {
-    width: 310px;
+    width: 100%;
     padding: 5px;
     font-size: 18px;
   }
@@ -331,16 +320,6 @@ main div li {
     height: auto;
     transition: 1.2s;
   }
-  h1 {
-    font-size: 30px;
-  }
-  header ul {
-    display: flex;
-    flex-direction: column;
-    margin-right: 8px;
-    gap: 5px;
-    font-size: 16px;
-  }
 
   .navbar {
     display: grid;
@@ -348,7 +327,7 @@ main div li {
     justify-content: center;
   }
   .navbar a {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
   }
   .grid-prod {
@@ -371,19 +350,5 @@ main div li {
     padding: 1px;
 
     gap: 15px;
-  }
-  .redes {
-    margin-left: auto;
-    margin-right: 5px;
-    align-content: center;
-    padding-top: 5px;
-  }
-  footer p {
-    font-size: 18px;
-    margin: 20%;
-    text-align: center;
-  }
-  .redes em {
-    font-size: 18px;
   }
 }

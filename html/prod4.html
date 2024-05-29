@@ -5,26 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/style1.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="../css/registro.css" />
     <title>Team 9</title>
     <link rel="icon" type="image/x-icon" href="../img/zapalogo.ico" />
   </head>
   <body>
-    <!-- Carga el header que se encuentra en el header.html con el registro.js -->
-    <div id="header-container"></div>
-
+    <header>
+      <iframe src="./header.html"></iframe>
+    </header>
     <main class="main">
-      <div class="conteiner">
+      <div class="">
         <!-- fila -->
         <h3>Yoax Power 3.0</h3>
-        <div class="grid">
-          <div class="grid-item-3">
+        <div class="flex">
+          <div class="img-cont">
             <img class="img-det" src="../img/z-te-4.jpg" alt="" />
             <img class="img-det" src="../img/z-te-5.jpg" alt="" />
             <img class="img-det" src="../img/z-te-6.jpg" alt="" />
@@ -41,7 +35,7 @@
               </div>
               <div class="det-pre">
                 <h2>Talles</h2>
-                <ul class="flex talles">
+                <ul class="grid talles">
                   <li>37</li>
                   <li>38</li>
                   <li>39</li>
@@ -75,25 +69,8 @@
         <a class="volver" href="../index.html">Volver</a>
       </div>
     </main>
-    
-    <aside class="aside">Banner con tarjetas de publicidad</aside>
-    
     <footer class="footer flex">
-      <p>Derechos reservados by Team9</p>
-
-      <div class="redes">
-        <a href=""><em class="fab fa-twitter fa-2x"></em></a>
-        <a href=""><em class="fab fa-instagram fa-2x"></em></a>
-        <a href=""><em class="fab fa-facebook fa-2x"></em></a>
-        <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
-        <a href=""><em class="fab fa-tiktok fa-2x"></em></a>
-        <a href=""><em class="fab fa-github fa-2x"></em></a>
-      </div>
+      <iframe id="footer" src="footer.html"></iframe>
     </footer>
   </body>
-    <!-- Carga el js y luego se le indca el nombre que aparecerá en el header, + la ruta  -->
-    <script src="../js/registro.js"></script>
-    <script>
-      cargarNombreDelHeader('Team 9', './header.html');
-    </script>
 </html>
