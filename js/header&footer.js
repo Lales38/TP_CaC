@@ -4,12 +4,12 @@ const footer =document.querySelector("footer");
 
 header.innerHTML = `
 <img class="logo" src="../img/zapalogo.png" alt="Logo" />
-<a href="#"><h1>Team 9</h1></a>
+<a href="../index.html"><h1>Team 9</h1></a>
 
 <div class="header">
 <ul class="">
   <li><a href="#" id="openModal">Registro</a></li>
-  <li><a href="#" id="openLoginModal">Login</a></li>
+  <li><a href="../html/login.html" id="openLoginModal">Login</a></li>
 </ul>
 </div>
 `
