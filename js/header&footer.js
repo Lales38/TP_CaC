@@ -3,7 +3,7 @@ const nav =document.querySelector("nav");
 const footer =document.querySelector("footer");
 
 header.innerHTML = `
-<img class="logo" src="./img/zapalogo.png" alt="Logo" />
+<img class="logo" src="../img/zapalogo.png" alt="Logo" />
 <a href="#"><h1>Team 9</h1></a>
 
 <div class="header">
@@ -33,3 +33,4 @@ footer.innerHTML = `
   <a href=""><em class="fab fa-github fa-2x"></em></a>
 </div>
 `
+
