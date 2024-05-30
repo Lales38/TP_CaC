@@ -8,7 +8,7 @@ header.innerHTML = `
 
 <div class="header">
 <ul class="">
-  <li><a href="#" id="openModal">Registro</a></li>
+  <li><a href="../html/registro.html" id="openModal">Registro</a></li>
   <li><a href="../html/login.html" id="openLoginModal">Login</a></li>
 </ul>
 </div>
