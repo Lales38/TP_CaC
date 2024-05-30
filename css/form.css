@@ -136,6 +136,9 @@ main {
 .formulario__mensaje-exito-activo {
   display: block;
 }
+.formulario__grupo-btn-enviar a{
+	text-decoration: none;
+}
 
 /* ----- -----  Estilos para Validacion ----- ----- */
 .formulario__grupo-correcto .formulario__validacion-estado {
