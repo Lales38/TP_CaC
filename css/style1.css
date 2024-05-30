@@ -22,8 +22,8 @@ body {
 header ul {
   display: flex;
   list-style: none;
-  gap: 65px;
-  margin-right: 75px;
+  gap: 2px;
+  margin: 5px;
   align-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
@@ -41,7 +41,7 @@ nav a:hover {
 .header {
   flex-wrap: wrap;
   align-content: center;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 .navbar {
   padding: 3px;
@@ -327,7 +327,7 @@ main div li {
     justify-content: center;
   }
   .navbar a {
-    font-size: 16px;
+    
     text-align: center;
   }
   .grid-prod {
